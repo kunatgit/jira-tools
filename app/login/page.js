@@ -27,6 +27,16 @@ export default function LoginPage() {
     }
   }, [user, router]);
 
+  useEffect(() => {
+    if (remember) {
+      localStorage.setItem("rememberedUsername", username);
+      localStorage.setItem("rememberedPassword", password);
+    } else {
+      localStorage.removeItem("rememberedUsername");
+      localStorage.removeItem("rememberedPassword");
+    }
+  }, [username, password, remember]);
+
   async function handleSubmit(e) {
     e.preventDefault();
     setLoading(true);

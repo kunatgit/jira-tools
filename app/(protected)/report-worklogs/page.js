@@ -6,12 +6,12 @@ import AppLayout from '@/components/layout/AppLayout';
 import { CardSkeleton } from '@/components/loading/Skeleton';
 
 const teamData = [
-  { name: 'สมชาย จงดี', dept: 'Development', logged: 38, target: 40, status: 'กรอกครบ' },
-  { name: 'มานี รักดี', dept: 'QA', logged: 32, target: 40, status: 'ขาดอีก 8 ชม.' },
-  { name: 'วิชัย สุขใจ', dept: 'Operations', logged: 40, target: 40, status: 'กรอกครบ' },
-  { name: 'สมหญิง นักพัฒนา', dept: 'Development', logged: 36, target: 40, status: 'ขาดอีก 4 ชม.' },
-  { name: 'ประสงค์ มีดี', dept: 'Development', logged: 40, target: 40, status: 'กรอกครบ' },
-  { name: 'กานดา ใจดี', dept: 'QA', logged: 28, target: 40, status: 'ขาดอีก 12 ชม.' },
+  { name: 'สมชาย จงดี', position: 'Development', logged: 38, target: 40, status: 'กรอกครบ' },
+  { name: 'มานี รักดี', position: 'QA', logged: 32, target: 40, status: 'ขาดอีก 8 ชม.' },
+  { name: 'วิชัย สุขใจ', position: 'Operations', logged: 40, target: 40, status: 'กรอกครบ' },
+  { name: 'สมหญิง นักพัฒนา', position: 'Development', logged: 36, target: 40, status: 'ขาดอีก 4 ชม.' },
+  { name: 'ประสงค์ มีดี', position: 'Development', logged: 40, target: 40, status: 'กรอกครบ' },
+  { name: 'กานดา ใจดี', position: 'QA', logged: 28, target: 40, status: 'ขาดอีก 12 ชม.' },
 ];
 
 export default function ReportWorklogsPage() {
@@ -136,7 +136,7 @@ export default function ReportWorklogsPage() {
                         <div style={{ fontSize: '13px', fontWeight: 600, color: 'var(--text-primary)' }}>
                           {member.name}
                         </div>
-                        <div style={{ fontSize: '11px', color: 'var(--text-muted)' }}>{member.dept}</div>
+                        <div style={{ fontSize: '11px', color: 'var(--text-muted)' }}>{member.position}</div>
                       </div>
                       <div style={{ flex: 2, minWidth: '120px' }}>
                         <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '4px', fontSize: '11px', color: 'var(--text-muted)' }}>

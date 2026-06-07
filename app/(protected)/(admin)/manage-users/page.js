@@ -6,10 +6,10 @@ import AppLayout from '@/components/layout/AppLayout';
 import { TableSkeleton } from '@/components/loading/Skeleton';
 
 const mockUsers = [
-  { id: 1, name: 'สมชาย ผู้ดูแลระบบ', username: 'admin', email: 'admin@jiratools.com', role: 'Admin', dept: 'IT Operations', status: 'ใช้งาน' },
-  { id: 2, name: 'สมหญิง นักพัฒนา', username: 'user', email: 'user@jiratools.com', role: 'User', dept: 'Development', status: 'ใช้งาน' },
-  { id: 3, name: 'สมศักดิ์ ทีมงาน', username: 'somchai', email: 'somchai@jiratools.com', role: 'User', dept: 'QA', status: 'ใช้งาน' },
-  { id: 4, name: 'วิชัย สุขใจ', username: 'vichai', email: 'vichai@jiratools.com', role: 'User', dept: 'Operations', status: 'ระงับ' },
+  { id: 1, name: 'สมชาย ผู้ดูแลระบบ', username: 'admin', email: 'admin@jiratools.com', role: 'Admin', position: 'IT Operations', status: 'ใช้งาน' },
+  { id: 2, name: 'สมหญิง นักพัฒนา', username: 'user', email: 'user@jiratools.com', role: 'User', position: 'Development', status: 'ใช้งาน' },
+  { id: 3, name: 'สมศักดิ์ ทีมงาน', username: 'somchai', email: 'somchai@jiratools.com', role: 'User', position: 'QA', status: 'ใช้งาน' },
+  { id: 4, name: 'วิชัย สุขใจ', username: 'vichai', email: 'vichai@jiratools.com', role: 'User', position: 'Operations', status: 'ระงับ' },
 ];
 
 export default function ManageUsersPage() {
@@ -143,7 +143,7 @@ export default function ManageUsersPage() {
                           </div>
                         </td>
                         <td style={{ padding: '10px 12px', color: 'var(--text-muted)' }}>{u.username}</td>
-                        <td style={{ padding: '10px 12px', color: 'var(--text-secondary)' }}>{u.dept}</td>
+                        <td style={{ padding: '10px 12px', color: 'var(--text-secondary)' }}>{u.position}</td>
                         <td style={{ padding: '10px 12px' }}>
                           <span
                             style={{
